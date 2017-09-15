@@ -13,7 +13,7 @@ First, build and run the image:
 
 Now, you should get data from bcentral.cl
 ```bash
-./docker-scrap
+./docker-scrap.sh
 ```
 
 It takes a while, because scraping bcentral.cl is a bit tricky. So I use a Selenium webdriver with Firefox.
@@ -24,7 +24,7 @@ It finishes with a `Done` message.
 Then, you may use the api:
 ```bash
 curl "localhost:8080/uf/price?value=1.5&date=20170915"
-culr "localhost:8080/uf/list"
+curl "localhost:8080/uf/list"
 ```
 
 ## Run without docker
@@ -54,7 +54,7 @@ virtualenv/bin/python src/uf_api/manage.py scrap
 Now, we may use the api
 ```bash
 curl "localhost:8080/uf/price?value=1.5&date=20170915"
-culr "localhost:8080/uf/list"
+curl "localhost:8080/uf/list"
 ```
 
 ## Some possible improvements
