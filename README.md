@@ -51,6 +51,11 @@ virtualenv/bin/python src/uf_api/manage.py migrate
 virtualenv/bin/python src/uf_api/manage.py scrap
 ```
 
+Start server:
+```bash
+virtualenv/bin/python src/uf_api/manage.py runserver 0.0.0.0:8080
+```
+
 Now, we may use the api
 ```bash
 curl "localhost:8080/uf/price?value=1.5&date=20170915"
